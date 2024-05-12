@@ -1,0 +1,7 @@
+def matches(s1, s2):
+    return sum(1 for x, y in zip(s1, s2) if x == y)
+print(matches("what", "watch"))  # Output: 1
+print(matches("ran", "van"))      # Output: 1
+print(matches("rain", "turn"))    # Output: 0
+print(matches("python", "py"))    # Output: 2
+print(matches("man", "women"))    # Output: 0
